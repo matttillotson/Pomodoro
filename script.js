@@ -9,7 +9,6 @@ function updateDisplay() {
 }
 
 function startTimer() {
-    console.log('START function called');  // Debug log
     if (timerId === null) {
         timerId = setInterval(() => {
             timeLeft--;
@@ -23,7 +22,6 @@ function startTimer() {
 }
 
 function pauseTimer() {
-    console.log('PAUSE function called');  // Debug log
     if (timerId !== null) {
         clearInterval(timerId);
         timerId = null;
@@ -31,7 +29,6 @@ function pauseTimer() {
 }
 
 function resetTimer() {
-    console.log('RESET function called');  // Debug log
     clearInterval(timerId);
     timerId = null;
     timeLeft = 1500;
@@ -39,30 +36,8 @@ function resetTimer() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Get buttons by their specific classes
-    const hikeButton = document.querySelector('.hike-btn');
-    const timeOutButton = document.querySelector('.timeout-btn');
-    const nextGameButton = document.querySelector('.nextgame-btn');
-
-    console.log('Found buttons:', {  // Debug log
-        hike: hikeButton,
-        timeOut: timeOutButton,
-        nextGame: nextGameButton
-    });
-
-    // Add event listeners with debug logs
-    hikeButton.addEventListener('click', () => {
-        console.log('HIKE button clicked');
-        startTimer();
-    });
-
-    timeOutButton.addEventListener('click', () => {
-        console.log('TIME OUT button clicked');
-        pauseTimer();
-    });
-
-    nextGameButton.addEventListener('click', () => {
-        console.log('NEXT GAME button clicked');
-        resetTimer();
-    });
+    // Directly bind functions to buttons using onclick
+    document.querySelector('.hike-btn').onclick = startTimer;
+    document.querySelector('.timeout-btn').onclick = pauseTimer;
+    document.querySelector('.nextgame-btn').onclick = resetTimer;
 }); 
