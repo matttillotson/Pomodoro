@@ -8,9 +8,9 @@ body {
     padding: 20px;
     max-width: 100%;
     box-sizing: border-box;
-    background-color: #18453B;  /* fallback color in case image doesn't load */
+    background-color: #18453B;  /* MSU Green fallback */
     
-    /* Using the Spartan Stadium image */
+    /* Restore background image */
     background-image: url('images/Spartan-Stadium.png');
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@ body {
 
 .container {
     text-align: center;
-    background-color: #faffee;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
