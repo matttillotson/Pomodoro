@@ -9,7 +9,7 @@ body {
     box-sizing: border-box;
     
     /* Try absolute path to GitHub Pages URL */
-    background: #18453B url('https://matttillotson.github.io/Pomodoro/images/Spartan-Stadium.png') center center/cover no-repeat fixed;
+    background: #18453B url('https://raw.githubusercontent.com/matttillotson/Pomodoro/main/images/Spartan-Stadium.png') center center/cover no-repeat fixed;
 }
 
 .container {
