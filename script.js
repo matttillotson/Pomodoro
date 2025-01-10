@@ -39,7 +39,6 @@ function resetTimer() {
     updateDisplay();
 }
 
-// Add event listeners to buttons
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM Content Loaded');
     
