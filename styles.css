@@ -8,8 +8,13 @@ body {
     padding: 20px;
     box-sizing: border-box;
     
-    /* Try absolute path to GitHub Pages URL */
-    background: #18453B url('https://raw.githubusercontent.com/matttillotson/Pomodoro/main/images/Spartan-Stadium.png') center center/cover no-repeat fixed;
+    /* Simplify the background properties */
+    background-color: #18453B;
+    background-image: url('/Pomodoro/images/Spartan-Stadium.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
