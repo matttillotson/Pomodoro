@@ -10,7 +10,7 @@ body {
     
     /* Background styling */
     background-color: #18453B;  /* MSU Green fallback */
-    background-image: url('../images/Spartan-Stadium.png');
+    background-image: url('images/Spartan-Stadium.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
