@@ -77,4 +77,10 @@
 
 .button-container button:hover {
     background-color: #1e5447;
-} 
+}
+
+.hike-btn { order: 1; }
+.timeout-btn { order: 2; }
+.nextgame-btn { order: 3; }
+
+/* ... rest of your CSS ... */ 

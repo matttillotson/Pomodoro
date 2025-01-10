@@ -43,9 +43,9 @@ function resetTimer() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM Content Loaded');
     
-    const hikeButton = document.querySelector('button:nth-child(1)');
-    const timeOutButton = document.querySelector('button:nth-child(2)');
-    const nextGameButton = document.querySelector('button:nth-child(3)');
+    const hikeButton = document.querySelector('.hike-btn');
+    const timeOutButton = document.querySelector('.timeout-btn');
+    const nextGameButton = document.querySelector('.nextgame-btn');
     
     console.log('Buttons found:', hikeButton, timeOutButton, nextGameButton);
 
