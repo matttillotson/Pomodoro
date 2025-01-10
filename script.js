@@ -41,15 +41,15 @@ function resetTimer() {
 
 // Add event listeners to buttons
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM Content Loaded'); // Debug log
+    console.log('DOM Content Loaded');
     
     const hikeButton = document.querySelector('button:nth-child(1)');
-    const nextGameButton = document.querySelector('button:nth-child(2)');
-    const timeOutButton = document.querySelector('button:nth-child(3)');
+    const timeOutButton = document.querySelector('button:nth-child(2)');
+    const nextGameButton = document.querySelector('button:nth-child(3)');
     
-    console.log('Buttons found:', hikeButton, nextGameButton, timeOutButton); // Debug log
+    console.log('Buttons found:', hikeButton, timeOutButton, nextGameButton);
 
     hikeButton.addEventListener('click', startTimer);
-    nextGameButton.addEventListener('click', resetTimer);
     timeOutButton.addEventListener('click', pauseTimer);
+    nextGameButton.addEventListener('click', resetTimer);
 }); 
