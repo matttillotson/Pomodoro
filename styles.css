@@ -5,6 +5,9 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
     background-color: #18453B;  /* fallback color in case image doesn't load */
     
     /* Using the Spartan Stadium image */
@@ -17,7 +20,7 @@ body {
 .container {
     text-align: center;
     background-color: #faffee;
-    padding: 2rem;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     min-width: 400px;
@@ -48,4 +51,19 @@ body {
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #666;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    min-width: 100px;
 } 
