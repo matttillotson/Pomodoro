@@ -1,4 +1,4 @@
-body {
+.stadium-background {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -8,9 +8,9 @@ body {
     padding: 20px;
     box-sizing: border-box;
     
-    /* Simplify the background properties */
+    /* Try multiple background paths */
     background-color: #18453B;
-    background-image: url('/Pomodoro/images/Spartan-Stadium.png');
+    background-image: url('./images/Spartan-Stadium.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
