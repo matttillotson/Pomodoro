@@ -8,9 +8,9 @@
     padding: 20px;
     box-sizing: border-box;
     
-    /* Try multiple background paths */
+    /* Use the full GitHub Pages URL */
     background-color: #18453B;
-    background-image: url('./images/Spartan-Stadium.png');
+    background-image: url('https://matttillotson.github.io/Pomodoro/images/Spartan-Stadium.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
