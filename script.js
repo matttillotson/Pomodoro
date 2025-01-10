@@ -6,11 +6,9 @@ function updateDisplay() {
     const seconds = timeLeft % 60;
     document.querySelector('.timer').textContent = 
         `${minutes}:${seconds.toString().padStart(2, '0')}`;
-    console.log('Display updated:', minutes, ':', seconds); // Debug log
 }
 
 function startTimer() {
-    console.log('Start timer clicked'); // Debug log
     if (timerId === null) {
         timerId = setInterval(() => {
             timeLeft--;
@@ -24,7 +22,6 @@ function startTimer() {
 }
 
 function pauseTimer() {
-    console.log('Pause timer clicked'); // Debug log
     if (timerId !== null) {
         clearInterval(timerId);
         timerId = null;
@@ -32,7 +29,6 @@ function pauseTimer() {
 }
 
 function resetTimer() {
-    console.log('Reset timer clicked'); // Debug log
     clearInterval(timerId);
     timerId = null;
     timeLeft = 1500;
@@ -40,15 +36,13 @@ function resetTimer() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM Content Loaded');
-    
+    // Get buttons by their specific classes
     const hikeButton = document.querySelector('.hike-btn');
     const timeOutButton = document.querySelector('.timeout-btn');
     const nextGameButton = document.querySelector('.nextgame-btn');
-    
-    console.log('Buttons found:', hikeButton, timeOutButton, nextGameButton);
 
+    // Add correct event listeners
     hikeButton.addEventListener('click', startTimer);
-    timeOutButton.addEventListener('click', pauseTimer);
-    nextGameButton.addEventListener('click', resetTimer);
+    timeOutButton.addEventListener('click', pauseTimer);  // Middle button pauses
+    nextGameButton.addEventListener('click', resetTimer); // Right button resets
 }); 
